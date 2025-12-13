@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento - Barbearia do Pedro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="login__intro">
+        <h1 class="login__title">Agende seu Horário</h1>
+        <p class="login__subtitle">
+          Confira nossos estilos abaixo e garanta sua vaga.
+        </p>
+      </div>
+
+      <section class="login__content">
+        <form id="booking-form" class="login__form">
+          <h2 class="login__heading">Dados do Agendamento</h2>
+
+          <div class="entry-group">
+            <label for="service-select" class="entry-group__label">
+              Selecione o Serviço
+            </label>
+            <select id="service-select" class="entry-group__input" required>
+              <option value="" disabled selected>
+                Clique para escolher...
+              </option>
+              <option value="Ratão">Corte Ratão - R$ 30,00</option>
+              <option value="Abaixaki">Abaixaki - R$ 35,00</option>
+              <option value="No cap">No cap - R$ 30,00</option>
+              <option value="barba">Barba Homem morcego - R$ 25,00</option>
+              <option value="JoJo´s">Corte JoJo´s - R$ 35,00</option>
+              <option value="Escanor">Corte Escanor - R$ 25,00</option>
+            </select>
+          </div>
+
+          <div class="entry-group">
+            <label for="date-input" class="entry-group__label">Data</label>
+            <input
+              type="date"
+              id="date-input"
+              class="entry-group__input"
+              required
+            />
+          </div>
+
+          <div class="entry-group">
+            <label for="time-input" class="entry-group__label">Horário</label>
+            <input
+              type="time"
+              id="time-input"
+              class="entry-group__input"
+              min="09:00"
+              max="19:00"
+              required
+            />
+          </div>
+
+          <div class="login__actions">
+            <button
+              type="submit"
+              id="schedule-button"
+              class="btn btn--primary"
+            >
+              Confirmar Agendamento
+            </button>
+            <a href="./index.html" id="back-button" class="btn btn--secondary">
+              Voltar
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <section class="gallery">
+      <h2>Nossos Estilos</h2>
+
+      <div class="gallery__container">
+        <div class="gallery__item">
+          <img src="./images/corte 2.jpg" alt="Ratão" />
+          <span>Ratão</span>
+        </div>
+        <div class="gallery__item">
+          <img
+            src="./images/81babc396d05f20dfaeb610e24af0cd9.jpg"
+            alt="Abaixaki"
+          />
+          <span>Abaixaki</span>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/corte-de-cabelo-engracado.jpg" alt="No cap" />
+          <span>No cap</span>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/corte.jpg" alt="Escanor" />
+          <span>Escanor</span>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/5dw1desyv2841.webp" alt="JoJo´s" />
+          <span>JoJo´s</span>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/Barbas-Feias-e-Bizarras-7.jpg" alt="Batman" />
+          <span>Homem morcego</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
